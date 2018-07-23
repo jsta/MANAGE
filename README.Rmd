@@ -1,0 +1,34 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+MANAGE - Measured Annual Nutrient loads from AGricultural Environments
+======
+
+## Usage
+
+* Rebuild `manage.rds` with `getMANAGE.R`
+
+* Load `manage.rds` with `readRDS("manage.rds")`
+
+## Analysis
+
+```{r echo=FALSE}
+dt <- readRDS("manage.rds")
+knitr::kable(names(dt), col.names = "Tables")
+knitr::kable(c(head(names(dt$`ag load Apr 2016`)), "..."), col.names = "Fields")
+```
+
+## References
+
+<https://swat.tamu.edu/publications/manage-database/>
