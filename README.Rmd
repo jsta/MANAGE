@@ -21,6 +21,14 @@ MANAGE - Measured Annual Nutrient loads from AGricultural Environments
 
 * Load `manage.rds` with `readRDS("manage.rds")`
 
+### System dependencies
+
+* `Hmisc`
+
+* [mdbtools](https://github.com/brianb/mdbtools)
+
+* `sqlite3`
+
 ## Analysis
 
 ```{r echo=FALSE}
